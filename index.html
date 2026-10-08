@@ -11,11 +11,13 @@
   <meta property="og:title" content="Muhamed Alarbi · Distributed Systems & Applied AI">
   <meta property="og:description" content="PhD in Computer Science (Western University). Cloud-edge orchestration, LLM systems and agents.">
   <meta property="og:url" content="https://malarbi.ca/">
-  <meta name="theme-color" content="#4f2683">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500&text=%D8%AF%D9%84%D9%8A%D9%84&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -33,6 +35,8 @@
 </head>
 <body>
 
+<a class="skip" href="#top">Skip to content</a>
+
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <a class="brand" href="#top">Muhamed Alarbi</a>
@@ -42,6 +46,7 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#teaching">Teaching</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -50,159 +55,263 @@
 <main id="top">
 
   <header class="hero">
-    <div class="wrap">
-      <p class="eyebrow">PhD, Computer Science · Western University · London, Ontario</p>
-      <h1>Muhamed Alarbi</h1>
-      <p class="lead">I’m a distributed systems engineer and researcher. My doctoral research focused on orchestrating applications across the cloud-edge continuum: placing serverless workflows across cloud data centers, 5G edge zones and local devices, and adapting how their components communicate.</p>
-      <p class="lead">As that work progressed, I turned increasingly to AI, using large language models as schedulers and building memory-augmented agents. I now design and build LLM-based systems, including a retrieval-augmented document platform, hybrid product search and AI content moderation. Before my PhD, I worked for several years as a backend and full-stack developer, and I have taught distributed systems at Western.</p>
-      <div class="actions">
-        <a class="btn primary" href="mailto:muhammed.elarbi@gmail.com">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-          Email
-        </a>
-        <a class="btn" href="https://www.linkedin.com/in/muhamed-alarbi-04a51759" rel="me">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
-          LinkedIn
-        </a>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Muhamed Alarbi</h1>
+        <p class="role">Distributed systems engineer building LLM-based systems</p>
+        <p class="cred">PhD, Computer Science · Western University · London, Ontario</p>
+        <p class="intro">My doctoral research focused on orchestrating applications across the cloud-edge continuum: placing serverless workflows across cloud data centers, 5G edge zones and local devices, and adapting how their components communicate. As that work progressed, I turned to AI, using large language models as schedulers. I now design and build LLM-based systems, including a retrieval-augmented document platform, hybrid product search and AI content moderation. Before my PhD, I worked for several years as a backend and full-stack developer, and I have taught distributed systems at Western.</p>
+        <div class="actions">
+          <a class="sign" href="mailto:muhammed.elarbi@gmail.com"><b>Email</b> muhammed.elarbi@gmail.com</a>
+          <a class="sign sign-quiet" href="https://www.linkedin.com/in/muhamed-alarbi-04a51759" rel="me">LinkedIn</a>
+        </div>
       </div>
-      <ul class="chips" aria-label="Research interests">
-        <li>Distributed systems</li>
-        <li>Cloud-edge continuum</li>
-        <li>LLM systems &amp; agents</li>
-        <li>Retrieval-augmented generation</li>
-        <li>5G multi-access edge computing</li>
-        <li>Machine learning for networking</li>
-      </ul>
+
+      <figure class="network">
+        <svg class="map map-wide" viewBox="0 0 700 350" role="group" aria-labelledby="map-title">
+          <title id="map-title">Research network: three lines of work meeting at LINGUA and MAPeR²</title>
+          <g class="r r-energy">
+            <path class="route" pathLength="1" d="M40 90 H290 L400 200"/>
+            <path class="bar" d="M40 77 V103"/>
+            <path class="tick" d="M165 86 V74"/>
+            <a href="#pub-appliance"><text x="40" y="50"><tspan x="40">Appliance</tspan><tspan x="40" dy="16">modes</tspan></text></a>
+            <a href="#pub-hydrosafe"><text x="165" y="66">HYDROSAFE</text></a>
+          </g>
+          <g class="r r-edge">
+            <path class="route" pathLength="1" d="M40 280 H320"/>
+            <path class="bar" d="M40 267 V293"/>
+            <path class="tick" d="M110 284 V296"/>
+            <path class="tick" d="M180 284 V296"/>
+            <path class="tick" d="M250 284 V296"/>
+            <a href="#pub-saas"><text x="40" y="316"><tspan x="40">Sensing as</tspan><tspan x="40" dy="16">a Service</tspan></text></a>
+            <a href="#scope"><text x="110" y="316">SCOPE</text></a>
+            <a href="#eco"><text x="180" y="316">ECO</text></a>
+            <a href="#i-pace"><text x="250" y="316">I-PACE</text></a>
+          </g>
+          <g class="r r-llm">
+            <path class="route" pathLength="1" d="M320 280 L400 200 H636"/>
+            <path class="bar" d="M636 187 V213"/>
+            <path class="tick" d="M472 204 V216"/>
+            <path class="tick" d="M550 204 V216"/>
+            <a href="#archive-assist"><text x="472" y="236"><tspan x="472">Archive</tspan><tspan x="472" dy="16">Assist</tspan></text></a>
+            <a href="#marketplace-search"><text x="550" y="236"><tspan x="550">Marketplace</tspan><tspan x="550" dy="16">search</tspan></text></a>
+            <a href="#content-moderation"><text x="636" y="236"><tspan x="636">Content</tspan><tspan x="636" dy="16">moderation</tspan></text></a>
+          </g>
+          <g class="xchg">
+            <a href="#lingua"><circle cx="320" cy="280" r="10"/><text x="320" y="316">LINGUA</text></a>
+            <a href="#maper2"><circle cx="400" cy="200" r="10"/><text class="start" x="416" y="184">MAPeR²</text></a>
+          </g>
+        </svg>
+
+        <svg class="map map-tall" viewBox="0 0 380 660" role="group" aria-labelledby="map-title-tall">
+          <title id="map-title-tall">Research network: three lines of work meeting at LINGUA and MAPeR²</title>
+          <g class="r r-energy">
+            <path class="route" pathLength="1" d="M100 40 V330 L170 400"/>
+            <path class="bar" d="M87 40 H113"/>
+            <path class="tick" d="M96 170 H84"/>
+            <a href="#pub-appliance"><text class="end" x="78" y="38"><tspan x="78">Appliance</tspan><tspan x="78" dy="17">modes</tspan></text></a>
+            <a href="#pub-hydrosafe"><text class="end" x="78" y="175">HYDROSAFE</text></a>
+          </g>
+          <g class="r r-edge">
+            <path class="route" pathLength="1" d="M250 40 V320"/>
+            <path class="bar" d="M237 40 H263"/>
+            <path class="tick" d="M254 110 H266"/>
+            <path class="tick" d="M254 180 H266"/>
+            <path class="tick" d="M254 250 H266"/>
+            <a href="#pub-saas"><text class="start" x="272" y="38"><tspan x="272">Sensing as</tspan><tspan x="272" dy="17">a Service</tspan></text></a>
+            <a href="#scope"><text class="start" x="272" y="115">SCOPE</text></a>
+            <a href="#eco"><text class="start" x="272" y="185">ECO</text></a>
+            <a href="#i-pace"><text class="start" x="272" y="255">I-PACE</text></a>
+          </g>
+          <g class="r r-llm">
+            <path class="route" pathLength="1" d="M250 320 L170 400 V630"/>
+            <path class="bar" d="M157 630 H183"/>
+            <path class="tick" d="M174 475 H186"/>
+            <path class="tick" d="M174 550 H186"/>
+            <a href="#archive-assist"><text class="start" x="194" y="480">Archive Assist</text></a>
+            <a href="#marketplace-search"><text class="start" x="194" y="555">Marketplace search</text></a>
+            <a href="#content-moderation"><text class="start" x="194" y="635">Content moderation</text></a>
+          </g>
+          <g class="xchg">
+            <a href="#lingua"><circle cx="250" cy="320" r="10"/><text class="start" x="270" y="325">LINGUA</text></a>
+            <a href="#maper2"><circle cx="170" cy="400" r="10"/><text class="start" x="190" y="405">MAPeR²</text></a>
+          </g>
+        </svg>
+
+        <figcaption>
+          <ul class="legend" aria-label="Lines">
+            <li><a href="#line-llm" data-line="llm"><span class="swatch" aria-hidden="true"></span>LLM systems</a></li>
+            <li><a href="#line-edge" data-line="edge"><span class="swatch" aria-hidden="true"></span>Cloud–edge</a></li>
+            <li><a href="#publications" data-line="energy"><span class="swatch" aria-hidden="true"></span>Residential energy</a></li>
+          </ul>
+        </figcaption>
+      </figure>
     </div>
   </header>
 
-  <section id="work">
-    <div class="wrap">
-      <h2>Selected work</h2>
-      <p class="section-intro">Research and engineering projects I designed and built.</p>
-      <div class="grid">
+  <section id="work" class="section">
+    <div class="wrap section-grid">
+      <header class="section-head">
+        <h2>Selected work</h2>
+        <p class="section-intro">Selected research and engineering projects.</p>
+      </header>
+      <div class="section-body">
 
-        <article class="card">
-          <h3>LINGUA</h3>
-          <p class="kicker">LLM-driven, intent-aware scheduling for the cloud-edge continuum</p>
-          <p>Operators describe what they want in plain language, such as lower latency or lower cost, and a large language model produces the deployment plan. A guardrail checks every plan and sends violations back to the model until the plan is valid, so changing the objective means editing a prompt, not rewriting a scheduler.</p>
-          <p class="result">Across 20 models from 7 providers, the strongest came within about 1% of the optimum found by a MILP solver.</p>
-          <div class="meta"><span class="badge wait">Paper to be submitted</span><span class="badge plain">With AWS Edge Computing</span></div>
-        </article>
+        <div class="line r-llm" id="line-llm">
+          <h3 class="line-name"><span class="route-tag">LLM systems</span></h3>
+          <ol class="stations">
+            <li class="station xchg" id="lingua">
+              <h4>LINGUA</h4>
+              <p class="kicker">LLM-driven, intent-aware scheduling for the cloud-edge continuum</p>
+              <p>Operators describe what they want in plain language, such as lower latency or lower cost, and a large language model produces the deployment plan. A guardrail checks every plan and sends violations back to the model until the plan is valid, so changing the objective means editing a prompt, not rewriting a scheduler.</p>
+              <p class="result">Across 20 models from 7 providers, the strongest came within about 1% of the optimum found by a MILP solver.</p>
+              <p class="meta"><span class="tag next">Paper to be submitted</span><span class="tag plain">With AWS Edge Computing</span></p>
+            </li>
+            <li class="station xchg" id="maper2">
+              <h4>MAPeR²</h4>
+              <p class="kicker">Memory-augmented LLM agents for personalized energy recommendations</p>
+              <p>A multi-turn LLM agent that gives households day-ahead recommendations for when to run their appliances, taking time-of-use electricity prices into account. It keeps track of the conversation, recalls past interactions from a vector database, and turns each finished session into lessons about what worked and what to avoid.</p>
+              <p class="result">With episodic recall, recurring schedules were accepted in a single turn with no corrections.</p>
+              <p class="meta"><span class="tag done">IEEE WF-IoT 2026 · accepted</span></p>
+            </li>
+            <li class="station" id="archive-assist">
+              <h4>Archive Assist (<bdi lang="ar">دليل</bdi>)</h4>
+              <p class="kicker">Arabic document intelligence · Digital Assets</p>
+              <p>A platform I design and build end to end at Digital Assets. Scanned Arabic official documents and spreadsheets become a searchable archive that answers questions with citations to the exact page or row, with briefing notes and decision memos built on top. Sensitive documents are processed only by on-premise models.</p>
+              <p class="result">Go, PostgreSQL, Meilisearch and SolidJS, with a model layer that works across seven LLM providers.</p>
+              <p class="meta"><span class="tag plain">Digital Assets · 2026–present</span></p>
+            </li>
+            <li class="station" id="marketplace-search">
+              <h4>Marketplace search</h4>
+              <p class="kicker">Semantic and hybrid product search · Digital Assets</p>
+              <p>Product search for an Arabic e-commerce marketplace that combines keyword matching with OpenAI embeddings in Meilisearch. An LLM generates search keywords for every product, covering Modern Standard Arabic synonyms, Libyan and other dialect words, and English, so shoppers find products in the words they actually use.</p>
+              <p class="result">A relevance cutoff set from measured score bands, related-product recommendations from embedding similarity, and a database fallback if the index is down.</p>
+              <p class="meta"><span class="tag plain">Digital Assets · 2026</span></p>
+            </li>
+            <li class="station" id="content-moderation">
+              <h4>Content moderation</h4>
+              <p class="kicker">AI moderation for an online marketplace · Digital Assets</p>
+              <p>Every product listing, review and seller profile is checked against the marketplace’s policy by an LLM with strict structured output, from illegal goods and scams to off-platform contact details and political content. It reads Libyan dialect and Arabizi, and also assigns each product’s category and shipping size.</p>
+              <p class="result">Runs asynchronously through a transactional outbox and job queues; only high-confidence verdicts are acted on automatically, and the rest go to human review.</p>
+              <p class="meta"><span class="tag plain">Digital Assets · 2026</span></p>
+            </li>
+          </ol>
+        </div>
 
-        <article class="card">
-          <h3>MAPeR²</h3>
-          <p class="kicker">Memory-augmented LLM agents for personalized energy recommendations</p>
-          <p>A multi-turn LLM agent that gives households day-ahead recommendations for when to run their appliances, taking time-of-use electricity prices into account. It keeps track of the conversation, recalls past interactions from a vector database, and turns each finished session into lessons about what worked and what to avoid.</p>
-          <p class="result">With episodic recall, recurring schedules were accepted in a single turn with no corrections.</p>
-          <div class="meta"><span class="badge ok">IEEE WF-IoT 2026 · accepted</span></div>
-        </article>
-
-        <article class="card">
-          <h3>Archive Assist (<bdi lang="ar">دليل</bdi>)</h3>
-          <p class="kicker">Arabic document intelligence · Digital Assets</p>
-          <p>A platform I design and build end to end at Digital Assets. Scanned Arabic official documents and spreadsheets become a searchable archive that answers questions with citations to the exact page or row, with briefing notes and decision memos built on top. Sensitive documents are processed only by on-premise models.</p>
-          <p class="result">Go, PostgreSQL, Meilisearch and SolidJS, with a model layer that works across seven LLM providers.</p>
-          <div class="meta"><span class="badge plain">Digital Assets · 2026–present</span></div>
-        </article>
-
-        <article class="card">
-          <h3>Marketplace search</h3>
-          <p class="kicker">Semantic and hybrid product search · Digital Assets</p>
-          <p>Product search for an Arabic e-commerce marketplace that combines keyword matching with OpenAI embeddings in Meilisearch. An LLM generates search keywords for every product, covering Modern Standard Arabic synonyms, Libyan and other dialect words, and English, so shoppers find products in the words they actually use.</p>
-          <p class="result">A relevance cutoff set from measured score bands, related-product recommendations from embedding similarity, and a database fallback if the index is down.</p>
-          <div class="meta"><span class="badge plain">Digital Assets · 2026</span></div>
-        </article>
-
-        <article class="card">
-          <h3>Content moderation</h3>
-          <p class="kicker">AI moderation for an online marketplace · Digital Assets</p>
-          <p>Every product listing, review and seller profile is checked against the marketplace’s policy by an LLM with strict structured output, from illegal goods and scams to off-platform contact details and political content. It reads Libyan dialect and Arabizi, and also assigns each product’s category and shipping size.</p>
-          <p class="result">Runs asynchronously through a transactional outbox and job queues; only high-confidence verdicts are acted on automatically, and the rest go to human review.</p>
-          <div class="meta"><span class="badge plain">Digital Assets · 2026</span></div>
-        </article>
-
-        <article class="card">
-          <h3>I-PACE</h3>
-          <p class="kicker">Choosing the right messaging protocol at the edge</p>
-          <p>On a commercial 5G testbed spanning edge devices, AWS Wavelength and the AWS cloud, I measured HTTP, MQTT, NATS and Zenoh (12,620 measurements) and showed that the best protocol depends on payload size and where the broker runs. I then trained models that choose the protocol for each request.</p>
-          <p class="result">Mean latency 33.9% lower than the best fixed protocol.</p>
-          <div class="meta"><span class="badge wait">Paper to be submitted</span></div>
-        </article>
-
-        <article class="card">
-          <h3>ECO</h3>
-          <p class="kicker">Orchestrating serverless function chains across cloud, 5G edge and devices</p>
-          <p>A hierarchical orchestrator and developer platform for building, testing and placing serverless workflows across the continuum, deployed on an AWS Region and an AWS Wavelength zone on Bell’s 5G network in collaboration with AWS Edge Computing.</p>
-          <p class="result">Multi-tier placement reduced end-to-end latency by up to 16% for large payloads.</p>
-          <div class="meta"><span class="badge ok">IEEE ICCCN 2024</span></div>
-        </article>
-
-        <article class="card">
-          <h3>SCOPE</h3>
-          <p class="kicker">Smart cooperative parking environment</p>
-          <p>A cooperative parking platform in which distributed software agents manage public and private parking facilities from real-time sensor data, so drivers spend less time searching and owners can offer unused spaces.</p>
-          <div class="meta"><span class="badge ok">IEEE Access 2023</span></div>
-        </article>
+        <div class="line r-edge" id="line-edge">
+          <h3 class="line-name"><span class="route-tag">Cloud–edge</span></h3>
+          <ol class="stations">
+            <li class="station stop xchg"><a href="#lingua">LINGUA</a></li>
+            <li class="station" id="i-pace">
+              <h4>I-PACE</h4>
+              <p class="kicker">Choosing the right messaging protocol at the edge</p>
+              <p>On a commercial 5G testbed spanning edge devices, AWS Wavelength and the AWS cloud, I measured HTTP, MQTT, NATS and Zenoh (12,620 measurements) and showed that the best protocol depends on payload size and where the broker runs. I then trained models that choose the protocol for each request.</p>
+              <p class="result">Mean latency 33.9% lower than the best fixed protocol.</p>
+              <p class="meta"><span class="tag next">Paper to be submitted</span></p>
+            </li>
+            <li class="station" id="eco">
+              <h4>ECO</h4>
+              <p class="kicker">Orchestrating serverless function chains across cloud, 5G edge and devices</p>
+              <p>A hierarchical orchestrator and developer platform for building, testing and placing serverless workflows across the continuum, deployed on an AWS Region and an AWS Wavelength zone on Bell’s 5G network in collaboration with AWS Edge Computing.</p>
+              <p class="result">Multi-tier placement reduced end-to-end latency by up to 16% for large payloads.</p>
+              <p class="meta"><span class="tag done">IEEE ICCCN 2024</span></p>
+            </li>
+            <li class="station" id="scope">
+              <h4>SCOPE</h4>
+              <p class="kicker">Smart cooperative parking environment</p>
+              <p>A cooperative parking platform in which distributed software agents manage public and private parking facilities from real-time sensor data, so drivers spend less time searching and owners can offer unused spaces.</p>
+              <p class="meta"><span class="tag done">IEEE Access 2023</span></p>
+            </li>
+            <li class="station stop"><a href="#pub-saas">Sensing as a Service</a></li>
+          </ol>
+        </div>
 
       </div>
     </div>
   </section>
 
-  <section id="publications">
-    <div class="wrap">
-      <h2>Publications</h2>
-      <p class="section-intro">Newest first.</p>
-      <ol class="pubs">
-        <li>
-          <span class="title">MAPeR²: A Multi-Turn Memory-Augmented Agentic-AI Paradigm for Personalized Residential Energy Recommendations</span>
-          <span class="authors">A. Jaradat, <b>M. Alarbi</b>, A. Haque, H. Lutfiyya.</span>
-          <span class="venue">2026 IEEE World Forum on Internet of Things (WF-IoT).</span><span class="badge ok">Accepted, to appear</span>
+  <section id="publications" class="section">
+    <div class="wrap section-grid">
+      <header class="section-head">
+        <h2>Publications</h2>
+        <p class="section-intro">Newest first.</p>
+      </header>
+      <ol class="section-body timetable pubs">
+        <li id="pub-maper2">
+          <span class="routes"><i class="rt rt-llm"></i><i class="rt rt-energy"></i><span class="sr">LLM systems and Residential energy lines</span></span>
+          <div>
+            <span class="title">MAPeR²: A Multi-Turn Memory-Augmented Agentic-AI Paradigm for Personalized Residential Energy Recommendations</span>
+            <span class="authors">A. Jaradat, <b>M. Alarbi</b>, A. Haque, H. Lutfiyya.</span>
+            <span class="venue">2026 IEEE World Forum on Internet of Things (WF-IoT).</span> <span class="tag done">Accepted, to appear</span>
+          </div>
         </li>
-        <li>
-          <span class="title">LINGUA: AI-Driven Intent-Aware Scheduling for the Cloud-Edge Continuum</span>
-          <span class="authors"><b>M. Alarbi</b>, R. Belson, A. Jaradat, A. Haque, H. Lutfiyya.</span>
-          <span class="badge wait">To be submitted</span>
+        <li id="pub-lingua">
+          <span class="routes"><i class="rt rt-llm"></i><i class="rt rt-edge"></i><span class="sr">LLM systems and Cloud–edge lines</span></span>
+          <div>
+            <span class="title">LINGUA: AI-Driven Intent-Aware Scheduling for the Cloud-Edge Continuum</span>
+            <span class="authors"><b>M. Alarbi</b>, R. Belson, A. Jaradat, A. Haque, H. Lutfiyya.</span>
+            <span class="tag next">To be submitted</span>
+          </div>
         </li>
-        <li>
-          <span class="title">I-PACE: Intelligent Protocol Adaptation for the Cloud-Edge Continuum over 5G</span>
-          <span class="authors"><b>M. Alarbi</b>, A. Jaradat, A. Haque, H. Lutfiyya.</span>
-          <span class="badge wait">To be submitted</span>
+        <li id="pub-ipace">
+          <span class="routes"><i class="rt rt-edge"></i><span class="sr">Cloud–edge line</span></span>
+          <div>
+            <span class="title">I-PACE: Intelligent Protocol Adaptation for the Cloud-Edge Continuum over 5G</span>
+            <span class="authors"><b>M. Alarbi</b>, A. Jaradat, A. Haque, H. Lutfiyya.</span>
+            <span class="tag next">To be submitted</span>
+          </div>
         </li>
-        <li>
-          <span class="title">ECO: Edge Continuum Orchestrator Framework for Managing Serverless Chains across the Cloud-Edge Spectrum</span>
-          <span class="authors"><b>M. Alarbi</b>, R. Belson, H. Lutfiyya.</span>
-          <span class="venue">2024 33rd International Conference on Computer Communications and Networks (ICCCN), IEEE, 2024.</span>
+        <li id="pub-eco">
+          <span class="routes"><i class="rt rt-edge"></i><span class="sr">Cloud–edge line</span></span>
+          <div>
+            <span class="title">ECO: Edge Continuum Orchestrator Framework for Managing Serverless Chains across the Cloud-Edge Spectrum</span>
+            <span class="authors"><b>M. Alarbi</b>, R. Belson, H. Lutfiyya.</span>
+            <span class="venue">2024 33rd International Conference on Computer Communications and Networks (ICCCN), IEEE, 2024.</span>
+          </div>
         </li>
-        <li>
-          <span class="title">HYDROSAFE: A Hybrid Deterministic-Probabilistic Model for Synthetic Appliance Profiles Generation</span>
-          <span class="authors">A. Jaradat, <b>M. Alarbi</b>, A. Haque, H. Lutfiyya.</span>
-          <span class="venue">Sensors, vol. 24, no. 17, p. 5619, 2024.</span> <a href="https://doi.org/10.3390/s24175619">DOI</a>
+        <li id="pub-hydrosafe">
+          <span class="routes"><i class="rt rt-energy"></i><span class="sr">Residential energy line</span></span>
+          <div>
+            <span class="title">HYDROSAFE: A Hybrid Deterministic-Probabilistic Model for Synthetic Appliance Profiles Generation</span>
+            <span class="authors">A. Jaradat, <b>M. Alarbi</b>, A. Haque, H. Lutfiyya.</span>
+            <span class="venue">Sensors, vol. 24, no. 17, p. 5619, 2024.</span> <a href="https://doi.org/10.3390/s24175619">doi:10.3390/s24175619</a>
+          </div>
         </li>
-        <li>
-          <span class="title">SCOPE: Smart Cooperative Parking Environment</span>
-          <span class="authors"><b>M. Alarbi</b> et al.</span>
-          <span class="venue">IEEE Access, vol. 11, pp. 120346–120361, 2023.</span>
+        <li id="pub-scope">
+          <span class="routes"><i class="rt rt-edge"></i><span class="sr">Cloud–edge line</span></span>
+          <div>
+            <span class="title">SCOPE: Smart Cooperative Parking Environment</span>
+            <span class="authors"><b>M. Alarbi</b> et al.</span>
+            <span class="venue">IEEE Access, vol. 11, pp. 120346–120361, 2023.</span>
+          </div>
         </li>
-        <li>
-          <span class="title">Appliances Operation Modes Identification Using States Clustering</span>
-          <span class="authors">A. Jaradat, <b>M. Alarbi</b>, et al.</span>
-          <span class="venue">2023 International Conference on Smart Applications, Communications and Networking (SmartNets), IEEE, 2023.</span>
+        <li id="pub-appliance">
+          <span class="routes"><i class="rt rt-energy"></i><span class="sr">Residential energy line</span></span>
+          <div>
+            <span class="title">Appliances Operation Modes Identification Using States Clustering</span>
+            <span class="authors">A. Jaradat, <b>M. Alarbi</b>, et al.</span>
+            <span class="venue">2023 International Conference on Smart Applications, Communications and Networking (SmartNets), IEEE, 2023.</span>
+          </div>
         </li>
-        <li>
-          <span class="title">Sensing as a Service Middleware Architecture</span>
-          <span class="authors"><b>M. Alarbi</b>, H. Lutfiyya.</span>
-          <span class="venue">2018 IEEE 6th International Conference on Future Internet of Things and Cloud (FiCloud), Barcelona, Spain, 2018, pp. 399–406.</span>
+        <li id="pub-saas">
+          <span class="routes"><i class="rt rt-edge"></i><span class="sr">Cloud–edge line</span></span>
+          <div>
+            <span class="title">Sensing as a Service Middleware Architecture</span>
+            <span class="authors"><b>M. Alarbi</b>, H. Lutfiyya.</span>
+            <span class="venue">2018 IEEE 6th International Conference on Future Internet of Things and Cloud (FiCloud), Barcelona, Spain, 2018, pp. 399–406.</span>
+          </div>
         </li>
       </ol>
     </div>
   </section>
 
-  <section id="experience">
-    <div class="wrap">
-      <h2>Experience</h2>
-      <p class="section-intro">Research and industry.</p>
-      <ol class="timeline">
+  <section id="experience" class="section">
+    <div class="wrap section-grid">
+      <header class="section-head">
+        <h2>Experience</h2>
+        <p class="section-intro">Research and industry.</p>
+      </header>
+      <ol class="section-body timetable dated">
         <li>
           <span class="when">2026 – present</span>
           <div>
@@ -255,42 +364,45 @@
     </div>
   </section>
 
-  <section id="teaching">
-    <div class="wrap">
-      <h2>Teaching</h2>
-      <p class="section-intro">Western University, Department of Computer Science.</p>
-      <div class="award">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14.2-1.5 7.3 5-3 5 3-1.5-7.3"/></svg>
-        <div>
+  <section id="teaching" class="section">
+    <div class="wrap section-grid">
+      <header class="section-head">
+        <h2>Teaching</h2>
+        <p class="section-intro">Western University, Department of Computer Science.</p>
+      </header>
+      <div class="section-body">
+        <div class="notice">
           <h3>Graduate Student Teaching Award, 2022–2023</h3>
           <p>Faculty of Science, Western University, in recognition of exemplary teaching work in the Department of Computer Science.</p>
         </div>
+        <ol class="timetable dated">
+          <li>
+            <span class="when">Winter 2026</span>
+            <div>
+              <h3>Course Instructor, CS4459/CS9466</h3>
+              <span class="where">Selected Topics on Scalable &amp; Robust Distributed Systems</span>
+              <p>Taught about 90 undergraduate and graduate students. Built lectures on distributed mutual exclusion and election, Raft consensus, and sharding; four programming assignments with Docker-based autograders; and the exams.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">2021 – 2025</span>
+            <div>
+              <h3>Teaching Assistant</h3>
+              <span class="where">CS1026, CS1030, CS2033, CS4459/CS9466</span>
+              <p>Lead TA for Computer Science Fundamentals (CS1026), managing a team of 16 TAs; labs, proctoring and marking across introductory programming, multimedia and communications, and distributed systems.</p>
+            </div>
+          </li>
+        </ol>
       </div>
-      <ol class="timeline">
-        <li>
-          <span class="when">Winter 2026</span>
-          <div>
-            <h3>Course Instructor, CS4459/CS9466</h3>
-            <span class="where">Selected Topics on Scalable &amp; Robust Distributed Systems</span>
-            <p>Taught about 90 undergraduate and graduate students. Built lectures on distributed mutual exclusion and election, Raft consensus, and sharding; four programming assignments with Docker-based autograders; and the exams.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">2021 – 2025</span>
-          <div>
-            <h3>Teaching Assistant</h3>
-            <span class="where">CS1026, CS1030, CS2033, CS4459/CS9466</span>
-            <p>Lead TA for Computer Science Fundamentals (CS1026), managing a team of 16 TAs; labs, proctoring and marking across introductory programming, multimedia and communications, and distributed systems.</p>
-          </div>
-        </li>
-      </ol>
     </div>
   </section>
 
-  <section id="education">
-    <div class="wrap">
-      <h2>Education</h2>
-      <ol class="timeline">
+  <section id="education" class="section">
+    <div class="wrap section-grid">
+      <header class="section-head">
+        <h2>Education</h2>
+      </header>
+      <ol class="section-body timetable dated">
         <li>
           <span class="when">2020 – 2026</span>
           <div>
@@ -318,35 +430,42 @@
     </div>
   </section>
 
-  <section id="skills">
-    <div class="wrap">
-      <h2>Skills</h2>
-      <dl class="skills">
-        <dt>AI &amp; LLM systems</dt>
-        <dd>Retrieval-augmented generation, semantic and hybrid search, LLM-based content moderation, agents with memory and guardrails, prompt engineering, structured extraction, LLM evaluation</dd>
-        <dt>Distributed systems</dt>
-        <dd>Orchestration and scheduling, serverless workflows, messaging (NATS, MQTT, Zenoh), job queues, edge and 5G MEC</dd>
-        <dt>Languages</dt>
-        <dd>Python, Go, Java, TypeScript, SQL</dd>
-        <dt>Back end</dt>
-        <dd>NestJS, Spring Boot, FastAPI, Go net/http, Prisma, BullMQ</dd>
-        <dt>Data</dt>
-        <dd>PostgreSQL, MongoDB, Redis, Weaviate, Meilisearch, DynamoDB</dd>
-        <dt>Cloud &amp; DevOps</dt>
-        <dd>AWS (EC2, Wavelength, IoT, DynamoDB), Docker, Kubernetes, Linux</dd>
-        <dt>Machine learning</dt>
-        <dd>Random Forest, XGBoost, neural networks (FNN, LSTM), Optuna, MILP (Gurobi)</dd>
+  <section id="skills" class="section">
+    <div class="wrap section-grid">
+      <header class="section-head">
+        <h2>Skills</h2>
+      </header>
+      <dl class="section-body skills">
+        <div><dt>AI &amp; LLM systems</dt>
+        <dd>Retrieval-augmented generation, semantic and hybrid search, LLM-based content moderation, agents with memory and guardrails, prompt engineering, structured extraction, LLM evaluation</dd></div>
+        <div><dt>Distributed systems</dt>
+        <dd>Orchestration and scheduling, serverless workflows, messaging (NATS, MQTT, Zenoh), job queues, edge and 5G MEC</dd></div>
+        <div><dt>Languages</dt>
+        <dd>Python, Go, Java, TypeScript, SQL</dd></div>
+        <div><dt>Back end</dt>
+        <dd>NestJS, Spring Boot, FastAPI, Go net/http, Prisma, BullMQ</dd></div>
+        <div><dt>Data</dt>
+        <dd>PostgreSQL, MongoDB, Redis, Weaviate, Meilisearch, DynamoDB</dd></div>
+        <div><dt>Cloud &amp; DevOps</dt>
+        <dd>AWS (EC2, Wavelength, IoT, DynamoDB), Docker, Kubernetes, Linux</dd></div>
+        <div><dt>Machine learning</dt>
+        <dd>Random Forest, XGBoost, neural networks (FNN, LSTM), Optuna, MILP (Gurobi)</dd></div>
       </dl>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="wrap">
-      <h2>Contact</h2>
-      <p class="section-intro">I’m open to roles in applied AI, distributed systems and research. The quickest way to reach me is by email.</p>
-      <div class="contact">
-        <a class="btn primary" href="mailto:muhammed.elarbi@gmail.com">muhammed.elarbi@gmail.com</a>
-        <a class="btn" href="https://www.linkedin.com/in/muhamed-alarbi-04a51759" rel="me">LinkedIn</a>
+  <section id="contact" class="section contact">
+    <div class="wrap section-grid">
+      <header class="section-head">
+        <h2>Contact</h2>
+      </header>
+      <div class="section-body">
+        <p class="contact-lead">I’m open to roles in applied AI, distributed systems and research. The quickest way to reach me is by email.</p>
+        <div class="actions terminus">
+          <span class="terminus-mark" aria-hidden="true"></span>
+          <a class="sign sign-big" href="mailto:muhammed.elarbi@gmail.com">muhammed.elarbi@gmail.com</a>
+          <a class="sign sign-quiet sign-big" href="https://www.linkedin.com/in/muhamed-alarbi-04a51759" rel="me">LinkedIn</a>
+        </div>
       </div>
     </div>
   </section>
@@ -356,6 +475,26 @@
 <footer>
   <div class="wrap">© 2026 Muhamed Alarbi · London, Ontario, Canada</div>
 </footer>
+
+<script>
+  (() => {
+    const links = [...document.querySelectorAll('.nav ul a')];
+    if (!('IntersectionObserver' in window) || !links.length) return;
+    const byId = new Map(links.map(a => [a.hash.slice(1), a]));
+    const io = new IntersectionObserver(entries => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        links.forEach(a => a.removeAttribute('aria-current'));
+        const a = byId.get(e.target.id);
+        if (!a) continue;
+        a.setAttribute('aria-current', 'true');
+        const ul = a.closest('ul');
+        if (ul.scrollWidth > ul.clientWidth) ul.scrollTo({ left: a.offsetLeft - ul.offsetLeft - 16, behavior: 'smooth' });
+      }
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    byId.forEach((_, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
+  })();
+</script>
 
 </body>
 </html>
